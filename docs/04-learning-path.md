@@ -7,7 +7,7 @@ refactoring.
 
 | # | Session | You read / do | We produce |
 |---|---------|---------------|------------|
-| 0 | **Environment** | Install R ≥ 4.4 and Rtools/Xcode. Then `install.packages(c("renv","mrgsolve","nlmixr2","tidyverse","survival","targets","tarchetypes","here","yaml","broom","marginaleffects","WeightIt","lmtp","gfoRmula"))` | `renv.lock`, `DESCRIPTION`. A smoke-test script that compiles each `.mod` |
+| 0 | **Environment** | Follow [note 5](05-environment-setup.md). In short: install R ≥ 4.4 and Rtools/Xcode, then `install.packages(c("renv","mrgsolve","nlmixr2","tidyverse","survival","targets","tarchetypes","here","yaml","broom","marginaleffects","WeightIt","lmtp","gfoRmula"))` | `renv.lock`, `DESCRIPTION`. A smoke-test script that compiles each `.mod` |
 | 1 | **The data-generating process** | The four `.mod` files and note 1 §1.3. Simulate *one* patient at 60 mg for each PK scenario and plot CP and tumour size | `analysis/00-model-walkthrough.qmd`: plots of PK1/PK2/PK3 accumulation, one tumour trajectory with and without drug, one DH2 dose history |
 | 2 | **One script, end to end** | `ER1_DH1_1Dose.Rmd` with paths fixed. Run it at small N (200 IDs, 20 replicates) | Golden reference numbers (OR and p for Cavg1C and CavgTE). Verification of issues 1–2 in note 2 §2.3 (grid sensitivity of `INH` and of the AE draw) |
 | 3 | **Why CavgTE lies** | Paper Fig. 2, plus the DAG in note 3 §3.1. Hand-compute CavgTE for an early versus a late event patient | A short explainer figure. You should be able to say *why* the slope is inverse under accumulation and positive under dose reduction |

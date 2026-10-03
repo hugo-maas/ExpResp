@@ -13,6 +13,7 @@ Read them in this order:
 | 2 | [`02-issues-and-refactor-plan.md`](02-issues-and-refactor-plan.md) | Why it won't run out of the box, the technical problems we found, and a target layout that is configurable and reproducible |
 | 3 | [`03-causal-roadmap.md`](03-causal-roadmap.md) | How to restate the question with estimands and causal inference, and a worked simulation use case to build in R (mrgsolve + nlmixr2 + tidyverse) |
 | 4 | [`04-learning-path.md`](04-learning-path.md) | A session-by-session plan for working through all of this together |
+| 5 | [`05-environment-setup.md`](05-environment-setup.md) | Where to run R (laptop, Codespaces, Hetzner, Claude cloud) and how to install everything |
 
 The notes are opinionated on purpose. Where they disagree with the paper or
 the code, they say why, and you are free to disagree back.
